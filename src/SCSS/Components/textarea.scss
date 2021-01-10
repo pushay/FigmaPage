@@ -1,0 +1,39 @@
+.textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    &__heading {
+       
+        &--primary {
+            line-height: 52px;
+        }
+
+        &--secondary {
+            color:#2D3236;
+            line-height: 30px;
+            
+        }
+
+        &--tertiary {
+            color: #2D3236;
+            line-height: 23.7;
+        }
+    }
+
+    &__paragraph {
+        
+
+        &--primary {
+            line-height: 32px;
+            font-size: 20px;
+        }
+
+        &--secondary {
+            color: #808080;
+            line-height: 24px;
+            font-size: 15px;
+        }
+    }
+}

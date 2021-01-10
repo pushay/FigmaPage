@@ -1,0 +1,17 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--primary {
+        background-color: #215398;
+        height: 466px;
+        
+    }
+
+    &--secondary {
+        height: 526px;
+        background-color: #F1F6FC;
+    }
+}
