@@ -1,7 +1,9 @@
-@import './SCSS/Abstracts/abstracts.scss';
-@import './SCSS/Base/base.scss';
-@import './SCSS/Pages/app.scss';
-@import './SCSS/Layout/navigation.scss';
-@import './SCSS/Components/section.scss';
-@import './SCSS/Components/textarea.scss';
-@import './SCSS/Components/slider.scss';
+@import './SCSS/Abstracts/_abstracts.scss';
+@import './SCSS/Base/_base.scss';
+@import './SCSS/Pages/_app.scss';
+@import './SCSS/Components/_section.scss';
+@import './SCSS/Layout/_navigation.scss';
+@import './SCSS/Components/_textarea.scss';
+@import './SCSS/Components/_box.scss';
+@import './SCSS/Components/_slider.scss';
+@import './SCSS/Components/svg';

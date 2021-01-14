@@ -1,0 +1,12 @@
+.navigation {
+    @include flex(flex, null, null, center);
+    height: 84px;
+    background-color: #fff;
+
+}
+
+@media(max-width:1400px){
+    .navigation{
+        @include flex(flex, null, center, center);
+    }
+}

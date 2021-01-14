@@ -1,0 +1,25 @@
+
+$font-family:'Rubik', sans-serif;
+$color-primary:#215398;
+$color-secondary:#F1F6FC;
+$color-tertiary:#ffff;
+
+@mixin flex($display, $flex-direction, $justify-content, $align-items){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin position($position, $top, $left){
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin textStyle($font-size, $line-height,$color, $margin-bottom){
+    font-size:$font-size;
+    line-height:$line-height;
+    color:$color;
+    margin-bottom:$margin-bottom;
+}

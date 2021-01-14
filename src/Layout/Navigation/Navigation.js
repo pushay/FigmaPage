@@ -8,7 +8,8 @@ function Navigation(){
 
     return(
         <div className="navigation">
-            <Svg 
+            <Svg
+            svgClass='svg' 
             img={SvgText.SvgArray[0]} 
             styles={svgStyles} />
         </div>

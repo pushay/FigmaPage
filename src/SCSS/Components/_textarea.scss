@@ -1,0 +1,120 @@
+.textArea {
+    @include flex(flex, column, null, center);
+    margin-bottom: 1.5rem;
+
+    &__heading {
+       
+        &--primary {
+            @include textStyle(40px, 52px, null, null);
+        }
+
+        &--secondary {
+            @include textStyle(30px,30px, #2D3236, null);
+        }
+
+        &--tertiary {
+            text-align: center;
+            @include textStyle(20px, 24px, #2D3236, 0.7rem);
+        }
+    }
+
+    &__paragraph {
+        
+        &--primary {
+            @include textStyle(20px, 32px, null,12px);
+        }
+
+        &--secondary {
+            @include textStyle(15px, 24px, #808080, 12px);
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:1150px){
+    .textArea {
+    
+        &__heading {
+           
+            &--primary {
+                @include textStyle(35px, 52px, null, null);
+            }
+    
+            &--secondary {
+                @include textStyle(25px,30px, #2D3236, null);
+            }
+    
+            &--tertiary {
+                text-align: center;
+                @include textStyle(18px, 24px, #2D3236, 0.7rem);
+            }
+        }
+    
+        &__paragraph {
+            
+            &--primary {
+                @include textStyle(16px, 32px, null,12px);
+            }
+    
+            &--secondary {
+                @include textStyle(14px, 24px, #808080, 12px);
+                text-align: center;
+            }
+        }
+    }
+    
+}
+
+@media(max-width:530px){
+    .textArea {
+
+        &__heading {
+           text-align: center;
+
+            &--primary {
+                width: 280px;
+            }
+    
+            &--secondary {
+                width: 280px;
+            }
+        }
+    
+        &__paragraph {
+            
+            &--primary {
+                width: 280px;
+                text-align: center;
+            }
+    
+            &--secondary {
+                text-align: center;
+            }
+        }
+    }
+    
+}
+
+@media(max-width:430px){
+    .textArea {
+
+        &__heading {
+
+            &--primary {
+                width: 250px;
+            }
+    
+            &--secondary {
+                width: 250px;
+            }
+        }
+    
+        &__paragraph {
+            
+            &--primary {
+                width: 250px;
+                
+            }
+        }
+    } 
+}

@@ -6,7 +6,7 @@ function TextArea(props){
     const renderHeadingSwitch = () => {
         switch(props.headingStyle){
             case 'h1':
-                return <h1 style={{color:props.headingColor == 'white' ? '#fff' : '#2D3236'}} 
+                return <h1 style={{color:props.headingColor}}
                 className='textArea__heading textArea__heading--primary'>
                     {props.TextforTextarea.heading}
                     </h1>
@@ -23,17 +23,20 @@ function TextArea(props){
         }
     }
 
+    
     return(
         <div className='textArea'>
-            {props.TextforTextarea.heading 
+            {(props.TextforTextarea.heading)
             ? renderHeadingSwitch() 
             : null}
             {props.TextforTextarea.paragraph 
-            ? <p style={{color:props.headingColor == 'white' ? '#fff' : '#2D3236'}}
+            ? <p
+            style={{color:props.paragraphColor ? props.paragraphColor : props.headingColor}}
             className={props.textAreaParagraphClasses}>{props.TextforTextarea.paragraph}</p>
             : null }
-            {props.svg 
-            ? <Svg/> 
+            {props.TextforTextarea.svg != ''
+            ? <Svg 
+            img={props.TextforTextarea.svg}/> 
             : null}
         </div>
     )
